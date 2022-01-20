@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		.myclass1{
+			background-color: blue;
+		}
+		.myclass2{
+			background-color: red;
+		}
+	</style>
+</head>
+
+<body>
+		<p id="myp" class="myclass2 myclass3" style="color: yellowgreen;">paragra</p>
+
+<script type="text/javascript">
+	var p=document.getElementById("myp");
+	var elementclass=p.classList;
+	elementclass.add("myclass4");
+	console.log(elementclass);
+
+	//add multiple class
+	elementclass.add("class5","class6","class7","class8");
+	console.log(elementclass);
+</script>
+</body>
+</html>

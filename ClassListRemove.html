@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.myclass1{
+			background-color: blue;
+		}
+		.myclass2{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<p id="myo" class="myclass2 myclass3 myclass4 myclass5 myclass6 myclass7" style="color:purple;">paragraph</p>
+	<script type="text/javascript">
+		var p=document.getElementById("myp");
+		var elementclass=p.classList;
+		console.log(elementclass);
+		elementclass.remove("myclass6");
+		console.log(elementclass);
+	</script>
+
+</body>
+</html>
